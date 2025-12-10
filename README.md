@@ -1,7 +1,10 @@
 Relatório do Trabalho Final: PowerFit Gym
+
 Aluno: João Kevin 
+
 Disciplina: Programação Web 
-Projeto: Site Funcional para Academia
+
+Projeto: site-academia-projeto
 
 1. Introdução
 O presente relatório descreve o processo de desenvolvimento do site "PowerFit Gym". O objetivo do trabalho foi criar uma página web responsiva, visualmente atraente e interativa, simulando o ambiente digital de uma academia. O projeto visou consolidar conhecimentos em HTML, CSS e JavaScript, com ênfase na utilização do framework Bootstrap 5 para agilizar a estilização e na manipulação do DOM para interatividade.
