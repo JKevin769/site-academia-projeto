@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Gym - Sua Melhor Versão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase text-warning" href="#">PowerFit <span class="text-white">Gym</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#imc">Calculadora IMC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="d-flex align-items-center text-center text-white">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Transforme seu Corpo</h1>
+                <p class="lead mb-4">A melhor estrutura para você alcançar seus objetivos.</p>
+                <button class="btn btn-warning btn-lg fw-bold" onclick="rolarParaPlanos()">Começar Agora</button>
+            </div>
+        </section>
+
+        <section id="planos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Nossos Planos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-header bg-secondary text-white text-center py-3">Básico</div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">R$ 69,90</h3>
+                                <p class="card-text">Acesso à musculação</p>
+                                <p class="card-text">Horário restrito</p>
+                                <button class="btn btn-outline-dark w-100 mt-3 assinar-btn">Assinar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow border-warning">
+                            <div class="card-header bg-warning text-dark text-center py-3 fw-bold">Gold (Popular)</div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">R$ 99,90</h3>
+                                <p class="card-text">Acesso total</p>
+                                <p class="card-text">Aulas de grupo</p>
+                                <button class="btn btn-dark w-100 mt-3 assinar-btn">Assinar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-header bg-secondary text-white text-center py-3">Platinum</div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">R$ 149,90</h3>
+                                <p class="card-text">Acesso total + 1 convidado</p>
+                                <p class="card-text">Personal Trainer 1x/mês</p>
+                                <button class="btn btn-outline-dark w-100 mt-3 assinar-btn">Assinar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="imc" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card shadow p-4">
+                            <h3 class="text-center mb-4">Calculadora de IMC</h3>
+                            <div class="mb-3">
+                                <label for="peso" class="form-label">Peso (kg)</label>
+                                <input type="number" class="form-control" id="peso" placeholder="Ex: 70">
+                            </div>
+                            <div class="mb-3">
+                                <label for="altura" class="form-label">Altura (m)</label>
+                                <input type="number" class="form-control" id="altura" placeholder="Ex: 1.75" step="0.01">
+                            </div>
+                            <button id="btn-calcular" class="btn btn-success w-100">Calcular IMC</button>
+                            
+                            <div id="resultado-imc" class="mt-4 p-3 rounded text-center d-none">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h1 class="text-uppercase mb-4 fw-bold text-warning">PowerFit Gym</h5>
+                    
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Onde Estamos</h5>
+                    <p>
+                        <i class="bi bi-geo-alt-fill me-2"></i> Rua do JK, 780<br>
+                        Bairro Presidente - BH
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-fill me-2"></i> powerfit@gmail.com
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone-fill me-2"></i> (38) 98765-4321
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Siga-nos</h5>
+                    <a href="https://www.facebook.com/?locale=pt_BR" class="btn btn-outline-light btn-sm btn-floating m-1 rounded-circle" role="button">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jkevin769/" class="btn btn-outline-light btn-sm btn-floating m-1 rounded-circle" role="button">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" class="btn btn-outline-light btn-sm btn-floating m-1 rounded-circle" role="button">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-1">
+                        &copy; 2025 <strong>PowerFit Gym</strong>. Todos os direitos reservados.
+                    </p>
+                    <p class="small text-white-50">
+                        Desenvolvido por: <span class="text-warning fw-bold">João Kevin</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

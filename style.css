@@ -1,0 +1,21 @@
+/* Configuração da Seção Hero (Banner) */
+#hero {
+    /* Imagem de fundo genérica de academia via URL */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ocupa a altura total da tela */
+    margin-top: -56px; /* Compensa a altura da navbar fixa para ficar transparente no topo se desejado, ou ajusta o visual */
+    padding-top: 56px;
+}
+
+/* Ajuste fino para cards */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de levitação ao passar o mouse */
+}
