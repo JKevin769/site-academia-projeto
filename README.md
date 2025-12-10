@@ -1,80 +1,58 @@
-# site-academia-projeto
- Trabalho prático de Programação Web do curso Sistema de Informação
+Relatório de Desenvolvimento Web: PowerFit Gym
+Aluno: João Kevin Disciplina: Desenvolvimento Web (Front-end) Projeto: Site Institucional e Funcional para Academia
 
- Relatório de Desenvolvimento Web: PowerFit Gym
-Disciplina: Desenvolvimento Web (Front-end) Aluno: João Kevin Projeto: Site Institucional de Academia com Funcionalidades Interativas
+1. Introdução
+O presente relatório descreve o processo de desenvolvimento do site "PowerFit Gym". O objetivo do trabalho foi criar uma página web responsiva, visualmente atraente e interativa, simulando o ambiente digital de uma academia. O projeto visou consolidar conhecimentos em HTML, CSS e JavaScript, com ênfase na utilização do framework Bootstrap 5 para agilizar a estilização e na manipulação do DOM para interatividade.
 
-1. Objetivo do Projeto
-O objetivo deste trabalho prático foi desenvolver um site responsivo para uma academia fictícia ("PowerFit Gym"), aplicando conceitos fundamentais de HTML5, CSS3 e JavaScript, com ênfase no uso do framework Bootstrap 5 para agilizar a estilização e garantir responsividade, além de manipulação dinâmica do DOM.
+2. Descrição do Site e Funcionalidades
+O site foi estruturado como uma Landing Page (página única), facilitando a navegação do usuário. As principais seções e funcionalidades incluem:
 
-2. Tecnologias e Ferramentas Utilizadas
-HTML5: Para estruturação semântica do conteúdo.
+Header e Navegação: Menu fixo no topo que permite navegação rápida entre as seções (Início, Planos, IMC).
 
-CSS3: Para estilos personalizados pontuais (imagem de fundo).
+Seção Hero (Banner): Área de destaque com imagem de fundo imersiva, "Call to Action" (chamada para ação) e botão de rolagem suave.
 
-Bootstrap 5 (CDN): Framework principal utilizado para layout (Grid System), tipografia, cores, botões e componentes (Cards, Navbar, Alerts).
+Seção de Planos: Apresentação de três opções de serviços (Básico, Gold e Platinum) utilizando Cards do Bootstrap para organização visual.
 
-JavaScript (ES6+): Para lógica de programação e interatividade.
+Calculadora de IMC: Uma ferramenta funcional desenvolvida em JavaScript. O usuário insere peso e altura, e o sistema retorna o índice calculado, a classificação (ex: Peso Normal, Sobrepeso) e feedback visual com cores (verde, amarelo, vermelho).
 
-Bootstrap Icons: Biblioteca de ícones vetoriais para o rodapé.
+Botões Interativos: Botões de "Assinar" que simulam a adição ao carrinho, alterando seu texto e cor temporariamente ao serem clicados.
 
-Git & GitHub: Para versionamento de código e hospedagem via GitHub Pages.
+Rodapé (Footer): Área informativa contendo breve descrição, endereço, contatos, links para redes sociais e os créditos de desenvolvimento.
 
-3. Estrutura de Arquivos
-O projeto foi organizado separando estrutura, estilo e comportamento (Separação de Preocupações):
+3. Tecnologias Utilizadas
+HTML5: Para a estruturação semântica do conteúdo (header, main, section, footer).
 
-index.html: Contém toda a marcação e conteúdo do site.
+CSS3: Utilizado minimamente para personalizações específicas (backgrounds e ajustes finos), priorizando o framework.
 
-style.css: Contém apenas as customizações que o Bootstrap não cobre nativamente (ex: background do banner).
+Bootstrap 5: Framework principal utilizado para o sistema de grid (responsividade), componentes (Navbar, Cards, Buttons, Inputs) e utilitários de espaçamento/cores.
 
-script.js: Contém toda a lógica de manipulação do DOM e eventos.
+JavaScript (ES6): Para a lógica de programação, manipulação do DOM e tratamento de eventos de clique.
 
-4. Detalhamento do Desenvolvimento
-4.1. Estrutura e Layout (HTML & Bootstrap)
-O site foi construído utilizando Tags Semânticas (<header>, <nav>, <main>, <section>, <footer>) para melhor acessibilidade e SEO.
+Git & GitHub Pages: Para versionamento do código e hospedagem online do projeto.
 
-Menu de Navegação: Utilizou-se o componente Navbar do Bootstrap, fixo no topo (fixed-top) e colapsável em dispositivos móveis (menu hambúrguer).
+4. Processo de Desenvolvimento
+O desenvolvimento seguiu uma abordagem incremental:
 
-Seção Hero: Um banner de destaque ocupando 100% da altura da tela (100vh), com imagem de fundo e chamada para ação (Call to Action).
+Estruturação: Inicialmente, foi criado o esqueleto HTML com as tags semânticas e a importação da biblioteca Bootstrap via CDN.
 
-Grid System: A seção de planos utilizou o sistema de colunas (row, col-md-4), garantindo que os cards fiquem lado a lado em telas grandes e empilhados em telas pequenas.
+Layout e Design: A estilização foi aplicada utilizando classes utilitárias do Bootstrap (ex: bg-dark, text-center, p-5). O CSS manual (style.css) foi restrito apenas à imagem de fundo da seção Hero e efeitos de hover nos cards, atendendo ao requisito de minimizar CSS puro.
 
-4.2. Estilização (CSS)
-Seguindo os requisitos, o uso de CSS manual foi minimizado.
+Lógica e Interatividade: Foi implementado o arquivo script.js. A lógica focou em capturar os eventos de clique, validar os inputs da calculadora de IMC e injetar o resultado no HTML dinamicamente.
 
-A maior parte do visual foi construída com Utility Classes do Bootstrap (ex: bg-dark, text-warning, p-5, shadow, rounded).
+Refinamento: Inclusão de ícones (Bootstrap Icons) no rodapé e testes de responsividade em diferentes tamanhos de tela para garantir a adaptação do layout móvel.
 
-O arquivo style.css foi usado estritamente para configurar a imagem de fundo com sobreposição (overlay) escura na seção Hero e efeitos de transição (hover) nos cards.
+5. Análise Crítica
+Durante a execução do projeto, foram observados os seguintes pontos:
 
-4.3. Interatividade e Lógica (JavaScript)
-A manipulação do DOM foi central neste projeto:
+5.1. Facilidades
+Uso do Bootstrap: A maior facilidade foi a construção do layout. O sistema de Grid (linhas e colunas) permitiu criar uma estrutura responsiva em minutos, sem a necessidade de media queries complexas no CSS.
 
-Calculadora de IMC:
+Componentes Prontos: O uso de componentes pré-estilizados, como a Navbar e os Cards, acelerou drasticamente o desenvolvimento, garantindo um visual profissional imediato.
 
-Captura os valores dos inputs de peso e altura.
+5.2. Dificuldades e Desafios
+Manipulação do DOM: A implementação da lógica da Calculadora de IMC exigiu atenção. O desafio foi garantir que o script não apenas calculasse o valor, mas também limpasse as classes de cor anteriores (ex: remover o vermelho de "Obesidade" antes de mostrar o verde de "Peso Normal") a cada novo cálculo.
 
-Realiza o cálculo matemático peso / (altura * altura).
-
-Utiliza condicionais (if/else) para determinar a classificação (Abaixo do peso, Normal, Obesidade, etc.).
-
-Manipulação DOM: Altera dinamicamente as classes do alerta (verde para normal, vermelho para obesidade) e injeta o resultado na página usando innerHTML.
-
-Botões de Assinar:
-
-Uso de querySelectorAll para selecionar múltiplos botões.
-
-Ao clicar, o botão muda de texto ("Assinar" -> "Adicionado") e de cor, simulando uma interação com carrinho de compras, e retorna ao estado original após 2 segundos (setTimeout).
-
-Scroll Suave: Função para rolar a página até a seção de planos ao clicar no botão inicial.
-
-5. Funcionalidades do Site
-Navegação Responsiva: O usuário pode navegar entre as seções (Início, Planos, IMC) através de um menu que se adapta a celulares e desktops.
-
-Visualização de Planos: Apresentação clara de três níveis de serviço (Básico, Gold, Platinum) usando Cards.
-
-Cálculo de Saúde: Uma ferramenta funcional onde o usuário insere seus dados e recebe feedback visual imediato sobre seu Índice de Massa Corporal.
-
-Informações de Contato: Rodapé completo com endereço, links para redes sociais e créditos ao desenvolvedor João Kevin.
+Personalização sobre o Framework: Em alguns momentos, sobrescrever o padrão do Bootstrap (como a cor específica de um botão ou a transparência do menu) exigiu o uso de CSS com seletores mais específicos ou classes adicionais.
 
 6. Conclusão
-O projeto atendeu a todos os requisitos propostos. O uso do Bootstrap permitiu um desenvolvimento rápido e visualmente agradável, enquanto o JavaScript adicionou a camada de inteligência necessária para transformar uma página estática em uma aplicação web interativa. O site encontra-se publicado e acessível publicamente via GitHub Pages.
+O projeto PowerFit Gym foi concluído com sucesso, atendendo a todos os requisitos propostos. O site encontra-se funcional, responsivo e hospedado publicamente. O desenvolvimento permitiu compreender na prática como bibliotecas front-end (Bootstrap) interagem com a lógica de programação (JavaScript), resultando em uma aplicação web moderna e eficiente.
