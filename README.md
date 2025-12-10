@@ -9,7 +9,10 @@ Projeto: site-academia-projeto
 1. Introdução
 O presente relatório descreve o processo de desenvolvimento do site "PowerFit Gym". O objetivo do trabalho foi criar uma página web responsiva, visualmente atraente e interativa, simulando o ambiente digital de uma academia. O projeto visou consolidar conhecimentos em HTML, CSS e JavaScript, com ênfase na utilização do framework Bootstrap 5 para agilizar a estilização e na manipulação do DOM para interatividade.
 
-2. Descrição do Site e Funcionalidades
+2. Objetivo Principal do Site:
+O site da PowerFit Gym foi projetado para conectar o cliente aos seus objetivos. Além de conhecer nossos planos exclusivos, o visitante pode utilizar nossa calculadora de IMC integrada para descobrir seu status atual e entender qual o melhor caminho para sua transformação física.
+
+3. Descrição do Site e Funcionalidades
 O site foi estruturado como uma Landing Page (página única), facilitando a navegação do usuário. As principais seções e funcionalidades incluem:
 
 Header e Navegação: Menu fixo no topo que permite navegação rápida entre as seções (Início, Planos, IMC).
@@ -24,7 +27,7 @@ Botões Interativos: Botões de "Assinar" que simulam a adição ao carrinho, al
 
 Rodapé (Footer): Área informativa contendo breve descrição, endereço, contatos, links para redes sociais e os créditos de desenvolvimento.
 
-3. Tecnologias Utilizadas
+4. Tecnologias Utilizadas
 HTML5: Para a estruturação semântica do conteúdo (header, main, section, footer).
 
 CSS3: Utilizado minimamente para personalizações específicas (backgrounds e ajustes finos), priorizando o framework.
@@ -35,7 +38,7 @@ JavaScript (ES6): Para a lógica de programação, manipulação do DOM e tratam
 
 Git & GitHub Pages: Para versionamento do código e hospedagem online do projeto.
 
-4. Processo de Desenvolvimento
+5. Processo de Desenvolvimento
 O desenvolvimento seguiu uma abordagem incremental:
 
 Estruturação: Inicialmente, foi criado o esqueleto HTML com as tags semânticas e a importação da biblioteca Bootstrap via CDN.
@@ -46,18 +49,18 @@ Lógica e Interatividade: Foi implementado o arquivo script.js. A lógica focou 
 
 Refinamento: Inclusão de ícones (Bootstrap Icons) no rodapé e testes de responsividade em diferentes tamanhos de tela para garantir a adaptação do layout móvel.
 
-5. Análise Crítica
+6. Análise Crítica
 Durante a execução do projeto, foram observados os seguintes pontos:
 
-5.1. Facilidades
+6.1. Facilidades
 Uso do Bootstrap: A maior facilidade foi a construção do layout. O sistema de Grid (linhas e colunas) permitiu criar uma estrutura responsiva em minutos, sem a necessidade de media queries complexas no CSS.
 
 Componentes Prontos: O uso de componentes pré-estilizados, como a Navbar e os Cards, acelerou drasticamente o desenvolvimento, garantindo um visual profissional imediato.
 
-5.2. Dificuldades e Desafios
+6.2. Dificuldades e Desafios
 Manipulação do DOM: A implementação da lógica da Calculadora de IMC exigiu atenção. O desafio foi garantir que o script não apenas calculasse o valor, mas também limpasse as classes de cor anteriores (ex: remover o vermelho de "Obesidade" antes de mostrar o verde de "Peso Normal") a cada novo cálculo.
 
 Personalização sobre o Framework: Em alguns momentos, sobrescrever o padrão do Bootstrap (como a cor específica de um botão ou a transparência do menu) exigiu o uso de CSS com seletores mais específicos ou classes adicionais.
 
-6. Conclusão
+7. Conclusão
 O projeto PowerFit Gym foi concluído com sucesso, atendendo a todos os requisitos propostos. O site encontra-se funcional, responsivo e hospedado publicamente. O desenvolvimento permitiu compreender na prática como bibliotecas front-end (Bootstrap) interagem com a lógica de programação (JavaScript), resultando em uma aplicação web moderna e eficiente.
